@@ -15,8 +15,6 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
-from app.views import p9api_view
 from django.views.generic import TemplateView
 
 urlpatterns = [
