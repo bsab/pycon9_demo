@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>The Official Pycon App</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+<script src="{% static 'js/cookiechoices.js' %}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+        cookieChoices.showCookieConsentBar('This website or third-party tools used by this make use of cookies necessary for the operation and useful for the purposes described in the cookie policy. By continuing to browse, you consent to their use.',' Close ',' Further Info ',' policy_cookie.html ');
+    });
+</script>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
+
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md-12">
+                    <div class="wellcome-heading">
+                        <h2>PyCon Italy app</h2>
+                        <h3>9</h3>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p style="text-align: justify; color: #fff;">
+                            PyCon Italy is the national conference where professionals,
+                                researchers and enthusiasts of the most beautiful
+                                programming language gather together.
+                            In the wonderful setting of Florence, PyCon is a weekend for
+                                learning, meeting and discovering.
+                            With this app, you can search for talks you're interested in and add them
+                                to your bookmark list by tapping the button in the talk detail view.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="get-start-area col-lg-12 col-md-12 col-sm-12">
+                        <!-- Form Start -->
+                         <button type="button" class="btn submit-btn" onclick="location.href='https://itunes.apple.com/it/app/pycon8/id1210782249?mt=8'"> <i class="fa fa-apple"></i>
+                             App Store</button>
+                         <button type="button" class="btn submit-btn" onclick="location.href='https://play.google.com/store/apps/details?id=com.pyconotto.app'"><i class="fa fa-google"></i>
+                             Play Store</button>
+
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+                <img src="{% static 'img/bg-img/welcome-mockup.png' %}" alt="">
+            </div>
+        </div>
+        <!-- Welcome thumb -->
+
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <img src="{% static 'img/pycon9.png' %}" width="100" alt="">
+        </div>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="https://www.facebook.com/pyconitalia"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/pyconit"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/pyconitalia/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="https://www.pycon.it/en/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.pycon.it/en/contacts/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Developed with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://about.me/the_sab" target="_blank">Sab</a> and <a href="https://github.com/marcoizzo" target="_blank">Marco</a></p>
+            <p><a href="http://www.pentatechnology.it" target="_blank"><img src="{% static 'img/penta.png' %}" width="150" alt=""></a></p>
+
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins JS -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- Slick Slider Js-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- Footer Reveal JS -->
+    <script src="{% static 'js/footer-reveal.min.js' %}"></script>
+    <!-- Active JS -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,12 @@
+django==1.11
+#
+# INIT - heroku dependecies
+#
+python-decouple
+gunicorn==19.6.0
+psycopg2==2.7.3.2
+whitenoise==3.2.2
+dj-database-url==0.4.1
+#
+# END - heroku dependecies
+#
